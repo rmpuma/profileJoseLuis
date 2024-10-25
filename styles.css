@@ -23,6 +23,14 @@ header {
     box-shadow: none;
 }
 
+#header-sobre-mi {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
 nav {
     display: flex;
     justify-content: flex-end; /* Alinear a la derecha */
@@ -91,7 +99,6 @@ nav ul li a:hover {
 #sobre-mi {
     background-image: url('sobre-mi.png');
     background-size: auto; /* Cambiado a 'contain' para mostrar toda la imagen */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
     background-position: center;
     position: relative;
     height: 100vh;
@@ -175,7 +182,7 @@ nav ul li a:hover {
 }
 
 .content-section-contacto {
-    padding: auto;
+    padding: 60px 0px;
     text-align: center;
     background-color: #ffffff;
     margin-top: 0px;
@@ -198,14 +205,17 @@ p {
 .proyecto {
     background: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
+    margin: 10px auto; /* Reducir el margen vertical */
+    padding: 15px; /* Reducir el padding interno */
+    max-width: 600px; /* Establecer un ancho máximo */
+    border-radius: 30px;
     transition: transform 0.3s ease;
+    max-height: 200px; /* Limitar la altura máxima */
+    overflow: hidden; /* Esconder el contenido que se desborde */
 }
 
 .proyecto:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .derechos {
@@ -215,14 +225,6 @@ p {
     text-align: center;
     width: 100%;
     margin-top: auto; /* Empuja el div hasta el fondo de la sección */
-}
-
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 input[type="text"],
@@ -319,7 +321,7 @@ li {
     display: flex;
     justify-content: center;
     gap: 30px; /* Aumenta el espacio entre los íconos */
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .social-icons .icon {
@@ -334,4 +336,23 @@ li {
 .social-icons .icon:hover {
     background-color: #007bff; /* Color de fondo al pasar el cursor */
     color: white; /* Cambia el color del ícono al pasar el cursor */
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.proyecto h3 {
+    font-size: 1.5rem; /* Tamaño de fuente ligeramente reducido */
+    margin-bottom: 10px;
+}
+
+.proyecto a {
+    font-size: 1rem; /* Ajustar el tamaño de los enlaces */
+    color: #007bff;
+    text-decoration: none;
 }
