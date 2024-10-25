@@ -359,15 +359,18 @@ footer {
 
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
+    /* Ajuste para la barra de navegación */
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Mantener los elementos en línea horizontal */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+        justify-content: center; /* Centra los elementos en la pantalla */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0 10px; /* Margen horizontal entre los elementos */
     }
 
+    /* Ajuste de fuentes y espaciado */
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -389,11 +392,14 @@ footer {
         max-width: 100%;
     }
 
+    /* Ajustes en íconos sociales */
     .social-icons {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
+        justify-content: center; /* Alinear los íconos sociales en el centro */
     }
 
+    /* Ajustes en el formulario de contacto */
     input[type="text"], input[type="email"], textarea {
         font-size: 1rem;
         padding: 10px;
@@ -402,5 +408,13 @@ footer {
     button {
         padding: 10px 20px;
         font-size: 1rem;
+    }
+
+    /* Fondo completo en la sección de contacto */
+    #contacto {
+        background-size: cover; /* Asegura que el fondo cubra toda el área */
+        background-position: center;
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        padding: 20px; /* Añade padding para evitar que el contenido esté muy pegado a los bordes */
     }
 }
