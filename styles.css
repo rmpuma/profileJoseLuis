@@ -1,0 +1,337 @@
+/* Estilo base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background: transparent; /* Hacer el fondo transparente */
+    padding: 10px 20px; /* Ajusta el padding si es necesario */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    background: transparent; /* Asegurarse de que el fondo del nav sea transparente */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacio entre los elementos */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+    padding: 5px 10px; /* Reduce el padding interno de los enlaces */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Sección de pantalla completa */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+/* Sección con fondo */
+#inicio {
+    background-image: url('joseluis.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+#sobre-mi {
+    background-image: url('sobre-mi.png');
+    background-size: auto; /* Cambiado a 'contain' para mostrar toda la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+#proyectos {
+    background-image: url('projct.jpg');
+    background-size: cover; /* Cambiado a 'contain' para mostrar toda la imagen */
+    background-position: center;
+    position: center;
+    height: 100vh;
+    color: white;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    background-image: url('contact.jpg');
+    justify-content: center;
+    background-size: cover; /* Cambiado a 'contain' para mostrar toda la imagen */
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+#sobre-mi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Botones */
+.btn {
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Secciones de contenido */
+.content-section {
+    padding: 160px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.content-section-contacto {
+    padding: auto;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: hsl(280, 51%, 48%);
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Estilos de los proyectos */
+.proyecto {
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.derechos {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Empuja el div hasta el fondo de la sección */
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Para mantener el tamaño de pantalla completa */
+}
+
+/* Secciones */
+section {
+    padding: 80px 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: hsl(280, 51%, 48%);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+p, li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+
+
+#inicio, #sobre-mi, #proyectos, #contacto {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta el espacio entre los íconos */
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    font-size: 3rem; /* Tamaño más grande para los íconos */
+    background-color: #f8f9fa; /* Fondo claro para resaltar */
+    color: #333;
+    padding: 15px;
+    border-radius: 50%; /* Hace los íconos redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    background-color: #007bff; /* Color de fondo al pasar el cursor */
+    color: white; /* Cambia el color del ícono al pasar el cursor */
+}
