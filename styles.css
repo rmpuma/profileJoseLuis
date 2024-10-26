@@ -362,7 +362,9 @@ footer {
     /* Ajuste para la barra de navegación */
     nav {
         background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+        width: 100%; /* Asegura que el fondo ocupe todo el ancho */
         padding: 10px; /* Añade padding al contenedor de la navegación */
+        position: relative; /* Permite un mejor posicionamiento si es necesario */
     }
 
     nav ul {
@@ -372,11 +374,11 @@ footer {
     }
 
     nav ul li {
-        margin: 0 8px; /* Reduce el margen horizontal entre los elementos */
+        margin: 0 5px; /* Reduce el margen horizontal entre los elementos */
     }
 
     nav ul li a {
-        font-size: 0.85rem; /* Reduce el tamaño de fuente de los enlaces */
+        font-size: 0.75rem; /* Reduce aún más el tamaño de fuente de los enlaces */
         color: #fff; /* Cambia el color del texto a blanco */
     }
 
@@ -426,5 +428,11 @@ footer {
         background-position: center;
         height: auto; /* Permite que la altura se ajuste al contenido */
         padding: 20px; /* Añade padding para evitar que el contenido esté muy pegado a los bordes */
+    }
+
+    /* Ajuste para el div derechos */
+    .derechos {
+        font-size: 0.75rem; /* Reduce el tamaño de fuente para que quepa en una sola línea */
+        text-align: center; /* Centra el texto */
     }
 }
