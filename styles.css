@@ -360,9 +360,14 @@ footer {
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Ajuste para la barra de navegación */
+    nav {
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+        padding: 10px; /* Añade padding al contenedor de la navegación */
+    }
+
     nav ul {
         flex-direction: row; /* Mantener los elementos en línea horizontal */
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+        flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
         justify-content: center; /* Centra los elementos en la pantalla */
     }
 
@@ -372,6 +377,7 @@ footer {
 
     nav ul li a {
         font-size: 0.85rem; /* Reduce el tamaño de fuente de los enlaces */
+        color: #fff; /* Cambia el color del texto a blanco */
     }
 
     /* Ajuste de fuentes y espaciado */
@@ -421,12 +427,4 @@ footer {
         height: auto; /* Permite que la altura se ajuste al contenido */
         padding: 20px; /* Añade padding para evitar que el contenido esté muy pegado a los bordes */
     }
-
-    /* Ajustes en .derechos */
-    .derechos {
-        font-size: 0.8rem; /* Reduce el tamaño de la fuente */
-        white-space: nowrap; /* Evita que el texto haga salto de línea */
-        padding: 10px; /* Ajuste de padding */
-    }
 }
-
