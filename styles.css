@@ -367,7 +367,11 @@ footer {
     }
 
     nav ul li {
-        margin: 0 10px; /* Margen horizontal entre los elementos */
+        margin: 0 8px; /* Reduce el margen horizontal entre los elementos */
+    }
+
+    nav ul li a {
+        font-size: 0.85rem; /* Reduce el tamaño de fuente de los enlaces */
     }
 
     /* Ajuste de fuentes y espaciado */
@@ -417,4 +421,12 @@ footer {
         height: auto; /* Permite que la altura se ajuste al contenido */
         padding: 20px; /* Añade padding para evitar que el contenido esté muy pegado a los bordes */
     }
+
+    /* Ajustes en .derechos */
+    .derechos {
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+        white-space: nowrap; /* Evita que el texto haga salto de línea */
+        padding: 10px; /* Ajuste de padding */
+    }
 }
+
