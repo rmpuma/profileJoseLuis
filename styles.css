@@ -361,12 +361,12 @@ footer {
     /* Ajuste para la barra de navegación */
     nav {
         background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
-        width: 100vw; /* Usa el 100% del ancho de la pantalla para el fondo */
+        width: 100vw; /* Asegura que ocupe todo el ancho visible de la pantalla */
         padding: 10px;
         position: fixed; /* Fija la barra en la parte superior */
-        top: 0; /* Alineación en la parte superior de la pantalla */
-        left: 0; /* Alineación al borde izquierdo */
-        z-index: 1000; /* Asegura que la barra esté por encima del resto del contenido */
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Asegura que esté por encima del contenido */
     }
 
     /* Alineación de elementos en la barra de navegación */
@@ -400,7 +400,7 @@ footer {
     }
 
     .btn {
-        padding: 8px 18px; /* Reduce un poco el padding para ahorrar espacio */
+        padding: 8px 18px;
         font-size: 0.9rem;
     }
 
@@ -416,7 +416,7 @@ footer {
     .social-icons {
         flex-direction: row;
         gap: 12px;
-        justify-content: center; /* Alinear los íconos sociales en el centro */
+        justify-content: center;
     }
 
     /* Ajustes en el formulario de contacto */
@@ -432,25 +432,23 @@ footer {
 
     /* Fondo completo en la sección de contacto */
     #contacto {
-        background-size: cover; /* Asegura que el fondo cubra toda el área */
+        background-size: cover;
         background-position: center;
-        min-height: 100vh; /* Asegura que cubra todo el largo visible de la pantalla */
-        padding: 15px; /* Añade padding para evitar que el contenido esté muy pegado a los bordes */
+        min-height: 100vh; /* Asegura que la sección cubra toda la altura visible */
+        padding: 15px;
     }
 
-    /* Ajuste para el div derechos */
-    /* Fondo completo en la clase .derechos */
-    .derechos {
+    /* Ajuste para el div derechos solo en la sección de contacto */
+    #contacto .derechos {
         font-size: 0.75rem;
         text-align: center;
         white-space: nowrap; /* Evita el salto de línea */
         width: 100%; /* Asegura que el fondo ocupe todo el ancho */
-        background-color: rgba(0, 0, 0, 0.8); /* Añade un fondo oscuro */
-        padding: 10px 0; /* Espaciado vertical */
-        color: #fff; /* Color del texto */
-        position: fixed; /* Fija la barra en la parte inferior */
-        bottom: 0; /* La ubica en la parte inferior */
-        left: 0; /* Alineación al lado izquierdo */
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+        padding: 10px 0;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
-
 }
