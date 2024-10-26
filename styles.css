@@ -357,29 +357,37 @@ footer {
     text-decoration: none;
 }
 
-/* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Ajuste para la barra de navegación */
     nav {
         background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
-        width: 100%; /* Asegura que el fondo ocupe todo el ancho */
-        padding: 10px; /* Añade padding al contenedor de la navegación */
+        width: 100vw; /* Usa el 100% del ancho de la pantalla para el fondo */
+        padding: 10px;
+        position: fixed; /* Fija la barra en la parte superior */
+        top: 0; /* Alineación en la parte superior de la pantalla */
+        left: 0; /* Alineación al borde izquierdo */
+        z-index: 1000; /* Asegura que la barra esté por encima del resto del contenido */
     }
 
+    /* Alineación de elementos en la barra de navegación */
     nav ul {
-        display: flex; /* Asegura el layout flexible */
-        flex-direction: row; /* Mantener los elementos en línea horizontal */
-        flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
-        justify-content: center; /* Centra los elementos en la pantalla */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     nav ul li {
-        margin: 0 3px; /* Reduce aún más el margen entre elementos */
+        margin: 0 5px;
     }
 
     nav ul li a {
-        font-size: 0.7rem; /* Reduce el tamaño de fuente para que quepa en una sola línea */
-        color: #fff; /* Cambia el color del texto a blanco */
+        font-size: 0.75rem;
+        color: #fff;
+    }
+
+    /* Añade un margen superior al contenido principal para evitar superposición con la barra */
+    .main-content {
+        margin-top: 60px; /* Ajusta según la altura de la barra de navegación */
     }
 
     /* Ajuste de fuentes y espaciado */
