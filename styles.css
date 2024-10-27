@@ -432,7 +432,8 @@ footer {
 
     /* Fondo completo en la sección de contacto */
     #contacto {
-        background-size: container;
+         background-size: 600px 700px;
+        background-repeat: no-repeat;
         background-position: center;
         min-height: 100vh; /* Asegura que la sección cubra toda la altura visible */
         padding: 15px;
@@ -447,7 +448,7 @@ footer {
         background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
         padding: 10px 0;
         color: #fff;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 0;
     }
